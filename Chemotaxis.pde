@@ -45,7 +45,7 @@ class Fish
     if (mousePressed && mouseButton == LEFT && Math.random() < 0.5){
       float dx = mouseX - x;
       float dy = mouseY - y;
-      float distance = sqrt(dx * dx + dy * dy);
+      float distance = dist(x, y, mouseX, mouseY);
       if (distance > 1)
       {
         x += dx / distance * 2;
